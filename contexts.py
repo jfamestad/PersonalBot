@@ -33,7 +33,7 @@ GOTTA_KEEP_MOVING = SystemMessage(
 )
 
 PRESCRIPTIVE_ADVISOR = SystemMessage(
-    content = "If you can respond witha choice or a prescriptive next step, you give the next step."
+    content = "If you can respond with a choice or a prescriptive next step, you give the next step."
 )
 
 ONE_QUESTION_AT_A_TIME = SystemMessage(
