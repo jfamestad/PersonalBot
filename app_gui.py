@@ -57,7 +57,6 @@ if prompt := st.chat_input():
     st.session_state["anthropic_messages"].append(HumanMessage(content=prompt))
     st.session_state["message_count"] += 1
     st.session_state.messages.append({"role": "user", "content": prompt})
-    # response = llm.predict_messages(st.session_state.anthropic_messages)
     response = llm.predict_messages(context + st.session_state.anthropic_messages)
     print(response)
     msg = response.content
